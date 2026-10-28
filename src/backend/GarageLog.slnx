@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="GarageLog.Api/GarageLog.Api.csproj" Id="8a1a555a-9ad2-4467-bd14-0c26207ead43" />
+  <Project Path="GarageLog.Application/GarageLog.Application.csproj" Id="e99307c2-1ba1-4e9c-baa6-0c5935004feb" />
+  <Project Path="GarageLog.Domain/GarageLog.Domain.csproj" Id="9bcc5ce7-a3df-437c-be70-56e181665355" />
+  <Project Path="GarageLog.Infrastructure/GarageLog.Infrastructure.csproj" Id="3d062ad6-051e-4b3e-bfa6-d41ea813069f" />
+</Solution>
