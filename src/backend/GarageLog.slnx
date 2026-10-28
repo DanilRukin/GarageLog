@@ -3,4 +3,5 @@
   <Project Path="GarageLog.Application/GarageLog.Application.csproj" Id="e99307c2-1ba1-4e9c-baa6-0c5935004feb" />
   <Project Path="GarageLog.Domain/GarageLog.Domain.csproj" Id="9bcc5ce7-a3df-437c-be70-56e181665355" />
   <Project Path="GarageLog.Infrastructure/GarageLog.Infrastructure.csproj" Id="3d062ad6-051e-4b3e-bfa6-d41ea813069f" />
+  <Project Path="GarageLog.SharedKernel/GarageLog.SharedKernel.csproj" Id="ef5f55b4-fb34-42a2-bd22-09563bda1879" />
 </Solution>

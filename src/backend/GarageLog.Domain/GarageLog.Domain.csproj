@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GarageLog.SharedKernel\GarageLog.SharedKernel.csproj" />
+  </ItemGroup>
+
 </Project>
