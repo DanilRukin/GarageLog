@@ -1,8 +1,9 @@
-﻿using GarageLog.Domain.Infrastrucuture;
+﻿using GarageLog.Domain.Common;
+using GarageLog.Domain.Infrastructure;
 using GarageLog.SharedKernel;
 using static GarageLog.Domain.Errors.PurchaseLineErrors;
 
-namespace GarageLog.Domain.Common;
+namespace GarageLog.Domain.Purchases;
 
 public sealed class PurchaseLine : ValueObject
 {

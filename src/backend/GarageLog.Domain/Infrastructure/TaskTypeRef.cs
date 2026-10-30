@@ -1,6 +1,6 @@
 ﻿using static GarageLog.Domain.Errors.TaskTypeRefErrors;
 
-namespace GarageLog.Domain.Infrastrucuture;
+namespace GarageLog.Domain.Infrastructure;
 
 public sealed record TaskTypeRef(Guid TaskTypeId, string NameSnapshot)
 {

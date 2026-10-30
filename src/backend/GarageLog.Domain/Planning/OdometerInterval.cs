@@ -1,4 +1,4 @@
-﻿using GarageLog.Domain.Infrastrucuture;
+﻿using GarageLog.Domain.Infrastructure;
 using GarageLog.SharedKernel;
 using static GarageLog.Domain.Errors.OdometerIntervalErrors;
 

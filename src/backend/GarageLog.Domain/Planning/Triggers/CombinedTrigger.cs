@@ -1,4 +1,4 @@
-﻿using GarageLog.Domain.Infrastrucuture;
+﻿using GarageLog.Domain.Infrastructure;
 using static GarageLog.Domain.Errors.CombinedTriggerErrors;
 
 namespace GarageLog.Domain.Planning.Triggers;

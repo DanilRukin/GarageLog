@@ -1,6 +1,6 @@
 ﻿using static GarageLog.Domain.Errors.WorkshopRefErrors;
 
-namespace GarageLog.Domain.Infrastrucuture;
+namespace GarageLog.Domain.Infrastructure;
 
 public sealed record WorkshopRef(Guid? WorkshopId, string NameSnapshot)
 {

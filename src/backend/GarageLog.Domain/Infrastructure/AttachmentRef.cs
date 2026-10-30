@@ -1,6 +1,6 @@
 ﻿using static GarageLog.Domain.Errors.AttachmentRefErrors;
 
-namespace GarageLog.Domain.Infrastrucuture;
+namespace GarageLog.Domain.Infrastructure;
 
 public sealed record AttachmentRef(Guid AttachmentId, string? Caption)
 {

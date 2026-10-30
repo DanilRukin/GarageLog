@@ -1,6 +1,6 @@
 ﻿using GarageLog.SharedKernel;
 
-namespace GarageLog.Domain.Infrastrucuture;
+namespace GarageLog.Domain.Infrastructure;
 
 /// <summary>
 /// Исключение уровня домена
