@@ -1,19 +1,27 @@
 ﻿using GarageLog.Domain.Infrastrucuture;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using static GarageLog.Domain.Errors.ByIntervalTriggerErrors;
 
 namespace GarageLog.Domain.Planning.Triggers;
 
 public sealed record ByIntervalTrigger : Trigger
 {
-    public ByIntervalTrigger(OdometerInterval? Km, TimeInterval? Months)
+    public OdometerInterval? Km { get; init; }
+    public TimeInterval? Months { get; init; }
+
+    public ByIntervalTrigger(OdometerInterval? km, TimeInterval? months)
     {
-        if (Km is null && Months is null)
-            throw new DomainException("trigger.empty_interval", "Интервал-триггер должен содержать хотя бы один интервал (км или месяцы).");
+        if (km is null && months is null)
+            throw new DomainException<ByIntervalTrigger>(IntervalTriggerHasEmptyInterval);
+
+        Km = km;
+        Months = months;
     }
+
     public override string Describe()
     {
-        throw new NotImplementedException();
+        var parts = new List<string>();
+        if (Km is not null) parts.Add(Km.ToString());
+        if (Months is not null) parts.Add(Months.ToString());
+        return string.Join(" или ", parts);
     }
 }

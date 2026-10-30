@@ -63,7 +63,12 @@ public class Money : ValueObject
         return Of(a.Amount - b.Amount, a.Currency);
     }
 
-    public static Money operator *(Money a, decimal qty) => Of(a.Amount * qty, a.Currency);
+    public static Money operator *(Money a, decimal qty)
+    {
+        if (qty < 0)
+            throw new DomainException<Money>(NegativeMuliplier);
+        return Of(a.Amount * qty, a.Currency);
+    }
 
     private static string NormilizeCurrency(string currency)
     {
