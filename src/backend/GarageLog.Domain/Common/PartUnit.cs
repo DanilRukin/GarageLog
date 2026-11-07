@@ -1,5 +1,8 @@
 ﻿namespace GarageLog.Domain.Common;
 
+/// <summary>
+/// Единица измерения количества
+/// </summary>
 public enum PartUnit
 {
     Piece = 1,

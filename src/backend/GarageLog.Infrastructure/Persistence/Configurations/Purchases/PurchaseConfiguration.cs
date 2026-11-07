@@ -51,6 +51,7 @@ public class PurchaseConfiguration : IEntityTypeConfiguration<Purchase>
             line.Property(l => l.PartId).HasColumnName("part_id");
             line.Property(l => l.NameSnapshot).HasColumnName("name").HasMaxLength(256).IsRequired();
             line.Property(l => l.Quantity).HasColumnName("quantity").HasPrecision(18, 3).IsRequired();
+            line.Property(l => l.Unit).HasColumnName("unit").HasConversion<int>().IsRequired();
 
             line.OwnsOne(l => l.UnitPrice, price =>
             {
