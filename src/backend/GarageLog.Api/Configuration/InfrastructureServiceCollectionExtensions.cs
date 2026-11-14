@@ -21,6 +21,7 @@ public static class InfrastructureServiceCollectionExtensions
                     npgsql.MigrationsAssembly(typeof(GarageLogDbContext).Assembly.FullName);
                     npgsql.EnableRetryOnFailure(3);
                 })
+                .UseSnakeCaseNamingConvention()
                 .AddInterceptors(interceptor);
         });
         return services;

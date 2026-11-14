@@ -65,6 +65,7 @@ public sealed class PlannedMaintenanceConfiguration : IEntityTypeConfiguration<P
             r.Property(x => x.Channel).HasColumnName("channel").HasConversion<int>().IsRequired();
             r.Property(x => x.Sent).HasColumnName("sent").IsRequired();
             r.Property(x => x.SentAt).HasColumnName("sent_at");
+            r.Ignore(x => x.DomainEvents);
 
             r.HasIndex("planned_id");
         });
