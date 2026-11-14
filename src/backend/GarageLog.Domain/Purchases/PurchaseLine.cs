@@ -44,6 +44,8 @@ public sealed class PurchaseLine : ValueObject
     /// </summary>
     public Money LineTotal => UnitPrice * Quantity;
 
+    private PurchaseLine() { }
+
     /// <summary>
     /// Приватный конструктор: создание только через <see cref="Create"/>.
     /// </summary>
